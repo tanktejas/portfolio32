@@ -18,6 +18,6 @@ app.post("/data", (req, res) => {
   res.send("ok");
 });
 
-app.listen(process.env.PORT | 3000, () => {
+app.listen(process.env.PORT || 3004, () => {
   console.log("Success!!");
 });
