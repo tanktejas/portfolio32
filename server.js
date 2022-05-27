@@ -14,8 +14,7 @@ app.use(express.json());
 app.post("/data", (req, res) => {
   console.log(req.body);
   const u_obj = new db(req.body);
-  u_obj.save();
-  res.send("ok");
+  u_obj.save(); 
 });
 
 app.listen(process.env.PORT || 3004, () => {
